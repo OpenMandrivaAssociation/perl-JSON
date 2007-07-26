@@ -1,7 +1,6 @@
 %define realname	JSON
 %define name		perl-%{realname}
-
-%define version		1.11
+%define version		1.14
 %define release		%mkrel 1
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
@@ -11,7 +10,7 @@ Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/JSON/%{realname}-%{version}.tar.bz2
+Source:		http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{realname}-%{version}.tar.bz2
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -20,7 +19,7 @@ BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
 BuildRequires:  perl(CGI)
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module converts between JSON (JavaScript Object Notation) and
