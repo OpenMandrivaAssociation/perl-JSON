@@ -1,6 +1,6 @@
 %define realname	JSON
 %define name		perl-%{realname}
-%define version		1.14
+%define version		1.15
 %define release		%mkrel 1
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
