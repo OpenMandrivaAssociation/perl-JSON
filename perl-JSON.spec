@@ -1,6 +1,6 @@
 %define realname	JSON
 %define name		perl-%{realname}
-%define version		1.15
+%define version		2.00
 %define release		%mkrel 1
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
@@ -47,6 +47,5 @@ rm -rf %{buildroot}
 %defattr(0644,root,root,0755)
 %doc Changes README
 %{_mandir}/*/*
-%{perl_vendorlib}/Apache
 %{perl_vendorlib}/JSON*
 
