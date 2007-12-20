@@ -19,6 +19,7 @@ BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
 BuildRequires:  perl(CGI)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module converts between JSON (JavaScript Object Notation) and
