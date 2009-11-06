@@ -1,5 +1,5 @@
 %define upstream_name	 JSON
-%define upstream_version 1.15
+%define upstream_version 2.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -48,4 +48,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{_mandir}/*/*
 %{perl_vendorlib}/JSON*
-%{perl_vendorlib}/Apache/*
