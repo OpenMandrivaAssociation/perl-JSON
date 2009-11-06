@@ -1,5 +1,5 @@
 %define upstream_name	 JSON
-%define upstream_version 2.15
+%define upstream_version 1.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Parse and convert to JSON (JavaScript Object Notation)
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
@@ -48,3 +48,4 @@ rm -rf %{buildroot}
 %doc Changes README
 %{_mandir}/*/*
 %{perl_vendorlib}/JSON*
+%{perl_vendorlib}/Apache/*
