@@ -1,9 +1,10 @@
 %define upstream_name	 JSON
 %define upstream_version 2.51
+%define _provides_exceptions perl(JSON::PP)
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 License:	Artistic/GPL
 Group:		Development/Perl
