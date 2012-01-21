@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 License:	Artistic/GPL
 Group:		Development/Perl
