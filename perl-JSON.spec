@@ -2,9 +2,9 @@
 %define upstream_version 2.53
 %define _provides_exceptions perl(JSON::PP)
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    	5
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	5
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 License:	Artistic/GPL
 Group:		Development/Perl
@@ -14,11 +14,10 @@ Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{upstream_name}-%
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
-BuildRequires:  perl(CGI)
-BuildRequires:  perl-devel
-Provides:       perl(JSON::backportPP)
-BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	perl(CGI)
+BuildRequires:	perl-devel
+Provides:		perl(JSON::backportPP)
+BuildArch:		noarch
 
 %description
 This module converts between JSON (JavaScript Object Notation) and
@@ -36,11 +35,7 @@ sed -i.DOS -e 's/\r//g' README
 %__make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
-
-%clean 
-rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
@@ -83,36 +78,36 @@ rm -rf %{buildroot}
 + Revision: 625272
 - update to new version 2.50
 
-* Fri Nov 12 2010 Jérôme Quelin <jquelin@mandriva.org> 2.270.0-1mdv2011.0
+* Fri Nov 12 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.270.0-1mdv2011.0
 + Revision: 596610
 - update to 2.27
 
-* Sat Aug 28 2010 Jérôme Quelin <jquelin@mandriva.org> 2.220.0-1mdv2011.0
+* Sat Aug 28 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.220.0-1mdv2011.0
 + Revision: 573793
 - update to 2.22
 
-* Tue Apr 06 2010 Jérôme Quelin <jquelin@mandriva.org> 2.210.0-1mdv2011.0
+* Tue Apr 06 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.210.0-1mdv2011.0
 + Revision: 532151
 - update to 2.21
 
-* Tue Mar 30 2010 Jérôme Quelin <jquelin@mandriva.org> 2.190.0-1mdv2010.1
+* Tue Mar 30 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.190.0-1mdv2010.1
 + Revision: 529782
 - update to 2.19
 
-* Tue Mar 23 2010 Jérôme Quelin <jquelin@mandriva.org> 2.180.0-1mdv2010.1
+* Tue Mar 23 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.180.0-1mdv2010.1
 + Revision: 526818
 - update to 2.18
 
-* Fri Jan 08 2010 Jérôme Quelin <jquelin@mandriva.org> 2.170.0-1mdv2010.1
+* Fri Jan 08 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.170.0-1mdv2010.1
 + Revision: 487476
 - update to 2.17
 
-* Fri Nov 06 2009 Jérôme Quelin <jquelin@mandriva.org> 2.160.0-1mdv2010.1
+* Fri Nov 06 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.160.0-1mdv2010.1
 + Revision: 460760
 - update to 2.16
 - update to 1.15
 
-* Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 2.150.0-1mdv2010.0
+* Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.150.0-1mdv2010.0
 + Revision: 406378
 - rebuild using %%perl_convert_version
 
@@ -200,7 +195,7 @@ rm -rf %{buildroot}
 * Wed Jun 14 2006 Scott Karns <scottk@mandriva.org> 1.07-1mdv2007.0
 - Version 1.07
 
-* Thu Apr 27 2006 Nicolas L�cureuil <neoclust@mandriva.org> 1.05-2mdk
+* Thu Apr 27 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.05-2mdk
 - Fix BuildRequires
 
 * Wed Apr 26 2006 Scott Karns <scottk@mandriva.org> 1.05-1mdk
