@@ -1,6 +1,6 @@
 %define upstream_name	 JSON
 %define upstream_version 2.53
-%define _provides_exceptions perl(JSON::PP)
+#define _provides_exceptions perl(JSON::PP)
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
