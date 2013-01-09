@@ -16,6 +16,7 @@ BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(CGI)
 BuildRequires:	perl-devel
+BuildRequires:	perl-JSON-PP
 Provides:		perl(JSON::backportPP)
 BuildArch:		noarch
 
