@@ -17,8 +17,12 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(CGI)
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
-Provides:		perl(JSON::backportPP)
 BuildArch:		noarch
+
+# This is (and should be) provided by perl-JSON-PP. We provide JSON::backportPP
+# instead.
+%define __noautoprov 'perl\\(JSON::PP\\)'
+Provides:		perl(JSON::backportPP)
 
 %description
 This module converts between JSON (JavaScript Object Notation) and
