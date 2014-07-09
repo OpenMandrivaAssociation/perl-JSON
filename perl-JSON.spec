@@ -1,5 +1,5 @@
 %define modname	JSON
-%define modver	2.53
+%define modver	2.90
 #define _provides_exceptions perl(JSON::PP)
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
@@ -15,7 +15,6 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(CGI)
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
-BuildRequires:	perl-JSON-XS
 # This is (and should be) provided by perl-JSON-PP. We provide JSON::backportPP
 # instead.
 %define __noautoprov 'perl\\(JSON::PP\\)'
