@@ -5,7 +5,7 @@
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	15
+Release:	16
 License:	Artistic/GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
