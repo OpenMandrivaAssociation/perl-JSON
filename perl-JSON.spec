@@ -12,7 +12,6 @@ Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://search.cpan.org/CPAN/authors/id/I/IS/ISHIGAKI/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
-BuildRequires:	perl(CGI)
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
 # This is (and should be) provided by perl-JSON-PP. We provide JSON::backportPP
