@@ -1,15 +1,15 @@
 %define modname	JSON
-%define modver	2.90
+%define modver	2.97001
 #define _provides_exceptions perl(JSON::PP)
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	17
+Release:	1
 License:	Artistic/GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/I/IS/ISHIGAKI/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(CGI)
@@ -19,6 +19,7 @@ BuildRequires:	perl-JSON-PP
 # instead.
 %define __noautoprov 'perl\\(JSON::PP\\)'
 Provides:	perl(JSON::backportPP)
+Provides:	perl(JSON::backportPP::Boolean)
 
 %description
 This module converts between JSON (JavaScript Object Notation) and
