@@ -1,11 +1,11 @@
 %define modname	JSON
-%define modver	2.97001
+%define modver	4.07
 #define _provides_exceptions perl(JSON::PP)
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	4
+Release:	1
 License:	Artistic/GPLv2
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/JSON
