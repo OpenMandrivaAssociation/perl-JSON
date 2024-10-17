@@ -7,7 +7,7 @@ Version:	4.10
 Release:	1
 License:	Artistic/GPLv2
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/JSON
+Url:		https://metacpan.org/pod/JSON
 Source0:	http://search.cpan.org/CPAN/authors/id/I/IS/ISHIGAKI/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
