@@ -3,8 +3,8 @@
 
 Summary:	Parse and convert to JSON (JavaScript Object Notation)
 Name:		perl-%{modname}
-Version:	4.10
-Release:	2
+Version:	4.11
+Release:	1
 License:	Artistic/GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/JSON
